@@ -1,0 +1,116 @@
+= Ionic 2
+
+Une application mobile en un rien de temps
+
+Johann Brancourt
+
+https://github.com/Johannbr
+
+:backend: revealjs
+:revealjs_control: false
+:cssimagedir: reveal.js/css/theme/image
+:imagesdir: ./images
+:revealjs_slideNumber: true
+:title_bg: {imagesdir}/fondmarron.jpg
+:subtitle_bg: {imagesdir}/fondnoir.jpg
+:icons: font
+
+
+[data-background="{title_bg}"]
+== Présentation
+
+[data-background="{subtitle_bg}"]
+=== Ionic 2, un nouveau framework
+* Version 2.0.0 beta 7
+* UI Composants, icônes, thèmes
+* Stack
+** Angular 2
+** TypeScript (aussi ES5 ou ES6)
+** Cordova
+
+[data-background="{subtitle_bg}"]
+=== TypeScript
+* Développé par Microsoft
+* Sur-ensemble de JavaScript
+* Typage, création de classes, import de modules, décorateurs (@)
+
+[[TypeScript]]
+.TypeScript
+image::TS.png[TS, 200, 200]
+
+[data-background="{subtitle_bg}"]
+=== Angular 2
+* Compatible avec Typescript (ou Dart ou ES5)
+* Version 2.0.0 beta sortie le 15/12/2015
+* Première RC sortie le 02/05/2016
+* Basé sur les composants
+
+[data-background="{subtitle_bg}"]
+=== Cordova
+* Framework JS permettant d’encapsuler du code JS, HTLM et CSS dans un conteneur natif
+* Code exécuté et rendu par l’intermédiaire d’une webview
+
+[data-background="{subtitle_bg}"]
+=== Les outils
+* Un langage (TS ou ES6)
+* Deux Frameworks
+** Angular 2
+** Cordova
+* Mais encore:
+** Nods.js pour NPM (Node Package Manager)
+** Gulp: Task runner
+** Sass: Sur ensemble de css
+** TSC: TypeScript Compiler
+** Browserify
+** Android SDK
+** ADB pour le debug
+
+
+[data-background="{title_bg}"]
+== Créer une application
+
+[data-background="{subtitle_bg}"]
+=== Installation
+* Installer node.js pour avoir npm
+
+[source,shell]
+.Installer Ionic 2
+----
+npm install –g ionic@beta
+----
+
+[source,shell]
+.Créer un projet
+----
+ionic start my_project --v2 --ts
+----
+
+[data-background="{subtitle_bg}"]
+=== Génération
+
+[source,shell]
+.Générer une nouvelle page
+----
+ionic generate page myPage –ts
+----
+Crée _myPage.ts_, _myPage.scss_, _myPage.html_ dans le dossier _app\pages\myPage_
+
+D’autres générations sont possibles: link:http://ionicframework.com/docs/v2/cli/generate/
+
+[data-background="{subtitle_bg}"]
+=== UI Components
+
+Large liste de composants
+http://ionicframework.com/docs/v2/components/
+
+[data-background="{subtitle_bg}"]
+=== Plugins
+
+[source,shell]
+.Installer un plugin
+----
+ionic plugin add cordova-plugin-camera --save
+----
+Installe le plugin et l'ajoute en tant que dépendance dans package.json
+
+Liste des plugins: http://ionicframework.com/docs/v2/
