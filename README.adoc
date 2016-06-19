@@ -57,7 +57,7 @@ image::TS.png[TS, 200, 200]
 ** Angular 2
 ** Cordova
 * Mais encore:
-** Nods.js pour NPM (Node Package Manager)
+** Node.js pour NPM (Node Package Manager)
 ** Gulp: Task runner
 ** Sass: Sur ensemble de css
 ** TSC: TypeScript Compiler
@@ -86,14 +86,25 @@ ionic start my_project --v2 --ts
 ----
 
 [data-background="{subtitle_bg}"]
-=== Génération
+=== Rendu du projet
+[source]
+.Dans un navigateur
+----
+ionic serve
+----
+.Via Ionic lab
+----
+ionic serve --lab
+----
 
+[data-background="{subtitle_bg}"]
+=== Génération
 [source]
 .Générer une nouvelle page
 ----
-ionic generate page myPage –ts
+ionic generate page camera –ts
 ----
-Crée _myPage.ts_, _myPage.scss_, _myPage.html_ dans le dossier _app\pages\myPage_
+Crée _camera.ts_, _camera.scss_, _camera.html_ dans le dossier _app\pages\camera_
 
 D’autres générations sont possibles: http://ionicframework.com/docs/v2/cli/generate/
 
@@ -112,6 +123,7 @@ http://ionicframework.com/docs/v2/components/
 ionic plugin add cordova-plugin-camera --save
 ----
 Installe le plugin et l'ajoute en tant que dépendance dans package.json
+
 Infos: http://ionicframework.com/docs/v2/native/camera/ et https://github.com/apache/cordova-plugin-camera
 
 Liste des plugins: http://ionicframework.com/docs/v2/
