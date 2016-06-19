@@ -1,0 +1,7 @@
+.git/
+css/
+reveal.js/
+node_modules/
+plugins/
+www/build/
+platforms/

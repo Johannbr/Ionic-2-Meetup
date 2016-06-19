@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Ionic 2</title><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" name="viewport"><link href="reveal.js/css/reveal.css" rel="stylesheet"><link rel="stylesheet" href="reveal.js/css/theme/black.css" id="theme"><link href="reveal.js/lib/css/zenburn.css" rel="stylesheet"><script>document.write( '<link rel="stylesheet" href="reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script></head><body><div class="reveal"><div class="slides"><section><h1>Ionic 2</h1><div class="paragraph"><p>Une application mobile en un rien de temps</p></div>
+<div class="paragraph"><p>Johann Brancourt</p></div>
+<div class="paragraph"><p><a href="https://github.com/Johannbr" class="bare">https://github.com/Johannbr</a></p></div><p><small></small></p></section>
+<section><section id="_présentation" data-background="./images/fondmarron.jpg"><h2>Présentation</h2></section><section id="_ionic_2_un_nouveau_framework" data-background="./images/fondnoir.jpg"><h2>Ionic 2, un nouveau framework</h2><div class="ulist"><ul><li><p>Version 2.0.0 beta 7</p></li><li><p>UI Composants, icônes, thèmes</p></li><li><p>Stack</p><div class="ulist"><ul><li><p>Angular 2</p></li><li><p>TypeScript (aussi ES5 ou ES6)</p></li><li><p>Cordova</p></li></ul></div></li></ul></div></section><section id="_typescript" data-background="./images/fondnoir.jpg"><h2>TypeScript</h2><div class="ulist"><ul><li><p>Développé par Microsoft</p></li><li><p>Sur-ensemble de JavaScript</p></li><li><p>Typage, création de classes, import de modules, décorateurs (@)</p></li></ul></div>
+<div class="imageblock" id="TypeScript" style=""><div class="content"><img src="./images/TS.png" alt="TS" width="200" height="200"></div><div class="title">Figure 1. TypeScript</div></div></section><section id="_angular_2" data-background="./images/fondnoir.jpg"><h2>Angular 2</h2><div class="ulist"><ul><li><p>Compatible avec Typescript (ou Dart ou ES5)</p></li><li><p>Version 2.0.0 beta sortie le 15/12/2015</p></li><li><p>Première RC sortie le 02/05/2016</p></li><li><p>Basé sur les composants</p></li></ul></div></section><section id="_cordova" data-background="./images/fondnoir.jpg"><h2>Cordova</h2><div class="ulist"><ul><li><p>Framework JS permettant d’encapsuler du code JS, HTLM et CSS dans un conteneur natif</p></li><li><p>Code exécuté et rendu par l’intermédiaire d’une webview</p></li></ul></div></section><section id="_les_outils" data-background="./images/fondnoir.jpg"><h2>Les outils</h2><div class="ulist"><ul><li><p>Un langage (TS ou ES6)</p></li><li><p>Deux Frameworks</p><div class="ulist"><ul><li><p>Angular 2</p></li><li><p>Cordova</p></li></ul></div></li><li><p>Mais encore:</p><div class="ulist"><ul><li><p>Nods.js pour NPM (Node Package Manager)</p></li><li><p>Gulp: Task runner</p></li><li><p>Sass: Sur ensemble de css</p></li><li><p>TSC: TypeScript Compiler</p></li><li><p>Browserify</p></li><li><p>Android SDK</p></li><li><p>ADB pour le debug</p></li></ul></div></li></ul></div></section></section>
+<section><section id="_créer_une_application" data-background="./images/fondmarron.jpg"><h2>Créer une application</h2></section><section id="_installation" data-background="./images/fondnoir.jpg"><h2>Installation</h2><div class="ulist"><ul><li><p>Installer node.js pour avoir npm</p></li></ul></div>
+<div class="listingblock"><div class="title">Installer Ionic 2</div><div class="content"><pre class="highlight"><code>npm install –g ionic@beta</code></pre></div></div>
+<div class="listingblock"><div class="title">Créer un projet</div><div class="content"><pre class="highlight"><code>ionic start my_project --v2 --ts</code></pre></div></div></section><section id="_génération" data-background="./images/fondnoir.jpg"><h2>Génération</h2><div class="listingblock"><div class="title">Générer une nouvelle page</div><div class="content"><pre class="highlight"><code>ionic generate page myPage –ts</code></pre></div></div>
+<div class="paragraph"><p>Crée <em>myPage.ts</em>, <em>myPage.scss</em>, <em>myPage.html</em> dans le dossier <em>app\pages\myPage</em></p></div>
+<div class="paragraph"><p>D’autres générations sont possibles: <a href="http://ionicframework.com/docs/v2/cli/generate/" class="bare">http://ionicframework.com/docs/v2/cli/generate/</a></p></div></section><section id="_ui_components" data-background="./images/fondnoir.jpg"><h2>UI Components</h2><div class="paragraph"><p>Large liste de composants
+<a href="http://ionicframework.com/docs/v2/components/" class="bare">http://ionicframework.com/docs/v2/components/</a></p></div></section><section id="_plugins" data-background="./images/fondnoir.jpg"><h2>Plugins</h2><div class="listingblock"><div class="title">Installer un plugin</div><div class="content"><pre class="highlight"><code>ionic plugin add cordova-plugin-camera --save</code></pre></div></div>
+<div class="paragraph"><p>Installe le plugin et l&#8217;ajoute en tant que dépendance dans package.json</p></div>
+<div class="paragraph"><p>Liste des plugins: <a href="http://ionicframework.com/docs/v2/" class="bare">http://ionicframework.com/docs/v2/</a></p></div></section></section></div></div><script src="reveal.js/lib/js/head.min.js"></script><script src="reveal.js/js/reveal.js"></script><script>// See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
+Reveal.initialize({
+  // Display controls in the bottom right corner
+  controls: true,
+  // Display a presentation progress bar
+  progress: true,
+  // Display the page number of the current slide
+  slideNumber: true,
+  // Push each slide change to the browser history
+  history: false,
+  // Enable keyboard shortcuts for navigation
+  keyboard: true,
+  // Enable the slide overview mode
+  overview: true,
+  // Vertical centering of slides
+  center: true,
+  // Enables touch navigation on devices with touch input
+  touch: true,
+  // Loop the presentation
+  loop: false,
+  // Change the presentation direction to be RTL
+  rtl: false,
+  // Turns fragments on and off globally
+  fragments: true,
+  // Flags if the presentation is running in an embedded mode,
+  // i.e. contained within a limited portion of the screen
+  embedded: false,
+  // Number of milliseconds between automatically proceeding to the
+  // next slide, disabled when set to 0, this value can be overwritten
+  // by using a data-autoslide attribute on your slides
+  autoSlide: 0,
+  // Stop auto-sliding after user input
+  autoSlideStoppable: true,
+  // Enable slide navigation via mouse wheel
+  mouseWheel: false,
+  // Hides the address bar on mobile devices
+  hideAddressBar: true,
+  // Opens links in an iframe preview overlay
+  previewLinks: false,
+  // Theme (e.g., beige, black, league, night, serif, simple, sky, solarized, white)
+  // NOTE setting the theme in the config no longer works in reveal.js 3.x
+  //theme: Reveal.getQueryHash().theme || 'black',
+  // Transition style (e.g., none, fade, slide, convex, concave, zoom)
+  transition: Reveal.getQueryHash().transition || 'slide',
+  // Transition speed (e.g., default, fast, slow)
+  transitionSpeed: 'default',
+  // Transition style for full page slide backgrounds (e.g., none, fade, slide, convex, concave, zoom)
+  backgroundTransition: 'fade',
+  // Number of slides away from the current that are visible
+  viewDistance: 3,
+  // Parallax background image (e.g., "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'")
+  parallaxBackgroundImage: '',
+  // Parallax background size in CSS syntax (e.g., "2100px 900px")
+  parallaxBackgroundSize: '',
+
+  // The "normal" size of the presentation, aspect ratio will be preserved
+  // when the presentation is scaled to fit different resolutions. Can be
+  // specified using percentage units.
+  width: 960,
+  height: 700,
+
+  // Factor of the display size that should remain empty around the content
+  margin: 0.1,
+
+  // Bounds for smallest/largest possible scale to apply to content
+  minScale: 0.2,
+  maxScale: 1.5,
+
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+      { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      
+      { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+      { src: 'reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+});</script></body></html>

@@ -1,0 +1,23 @@
+<!--
+  Generated template for the CameraPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-navbar *navbar>
+  <ion-title>camera</ion-title>
+</ion-navbar>
+
+<ion-content padding class="camera">
+<button (click)="takePic()">Take picture</button>
+
+<ion-slides style="height: 50vh">
+  <ion-slide *ngFor="#image of images">
+    <ion-card>
+      <img [src]="image.src"/>
+    </ion-card>
+  </ion-slide>
+</ion-slides>
+
+
+</ion-content>

@@ -1,4 +1,4 @@
-= Ionic 2
+ï»¿= Ionic 2
 
 Une application mobile en un rien de temps
 
@@ -17,12 +17,12 @@ https://github.com/Johannbr
 
 
 [data-background="{title_bg}"]
-== Présentation
+== PrÃ©sentation
 
 [data-background="{subtitle_bg}"]
 === Ionic 2, un nouveau framework
 * Version 2.0.0 beta 7
-* UI Composants, icônes, thèmes
+* UI Composants, icÃ´nes, thÃ¨mes
 * Stack
 ** Angular 2
 ** TypeScript (aussi ES5 ou ES6)
@@ -30,9 +30,9 @@ https://github.com/Johannbr
 
 [data-background="{subtitle_bg}"]
 === TypeScript
-* Développé par Microsoft
+* DÃ©veloppÃ© par Microsoft
 * Sur-ensemble de JavaScript
-* Typage, création de classes, import de modules, décorateurs (@)
+* Typage, crÃ©ation de classes, import de modules, dÃ©corateurs (@)
 
 [[TypeScript]]
 .TypeScript
@@ -42,13 +42,13 @@ image::TS.png[TS, 200, 200]
 === Angular 2
 * Compatible avec Typescript (ou Dart ou ES5)
 * Version 2.0.0 beta sortie le 15/12/2015
-* Première RC sortie le 02/05/2016
-* Basé sur les composants
+* PremiÃ¨re RC sortie le 02/05/2016
+* BasÃ© sur les composants
 
 [data-background="{subtitle_bg}"]
 === Cordova
-* Framework JS permettant d’encapsuler du code JS, HTLM et CSS dans un conteneur natif
-* Code exécuté et rendu par l’intermédiaire d’une webview
+* Framework JS permettant dâ€™encapsuler du code JS, HTLM et CSS dans un conteneur natif
+* Code exÃ©cutÃ© et rendu par lâ€™intermÃ©diaire dâ€™une webview
 
 [data-background="{subtitle_bg}"]
 === Les outils
@@ -67,35 +67,35 @@ image::TS.png[TS, 200, 200]
 
 
 [data-background="{title_bg}"]
-== Créer une application
+== CrÃ©er une application
 
 [data-background="{subtitle_bg}"]
 === Installation
 * Installer node.js pour avoir npm
 
-[source,shell]
+[source]
 .Installer Ionic 2
 ----
-npm install –g ionic@beta
+npm install â€“g ionic@beta
 ----
 
-[source,shell]
-.Créer un projet
+[source]
+.CrÃ©er un projet
 ----
 ionic start my_project --v2 --ts
 ----
 
 [data-background="{subtitle_bg}"]
-=== Génération
+=== GÃ©nÃ©ration
 
-[source,shell]
-.Générer une nouvelle page
+[source]
+.GÃ©nÃ©rer une nouvelle page
 ----
-ionic generate page myPage –ts
+ionic generate page myPage â€“ts
 ----
-Crée _myPage.ts_, _myPage.scss_, _myPage.html_ dans le dossier _app\pages\myPage_
+CrÃ©e _myPage.ts_, _myPage.scss_, _myPage.html_ dans le dossier _app\pages\myPage_
 
-D’autres générations sont possibles: link:http://ionicframework.com/docs/v2/cli/generate/
+Dâ€™autres gÃ©nÃ©rations sont possibles: http://ionicframework.com/docs/v2/cli/generate/
 
 [data-background="{subtitle_bg}"]
 === UI Components
@@ -106,11 +106,12 @@ http://ionicframework.com/docs/v2/components/
 [data-background="{subtitle_bg}"]
 === Plugins
 
-[source,shell]
+[source]
 .Installer un plugin
 ----
 ionic plugin add cordova-plugin-camera --save
 ----
-Installe le plugin et l'ajoute en tant que dépendance dans package.json
+Installe le plugin et l'ajoute en tant que dÃ©pendance dans package.json
+Infos: http://ionicframework.com/docs/v2/native/camera/ et https://github.com/apache/cordova-plugin-camera
 
 Liste des plugins: http://ionicframework.com/docs/v2/
