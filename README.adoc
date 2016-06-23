@@ -20,8 +20,8 @@ https://github.com/Johannbr
 == Présentation
 
 [data-background="{subtitle_bg}"]
-=== Ionic 2, un nouveau framework
-* Version 2.0.0 beta 7
+=== Ionic 2
+* Version 2.0.0 beta 9
 * UI Composants, icônes, thèmes
 * Stack
 ** Angular 2
@@ -84,6 +84,13 @@ npm install –g ionic@beta
 ----
 ionic start my_project --v2 --ts
 ----
+
+[data-background="{subtitle_bg}"]
+=== Structure du projet
+
+[[Projectstructure]]
+.Structure du projet
+image::project_structure.png[Project]
 
 [data-background="{subtitle_bg}"]
 === Rendu du projet
