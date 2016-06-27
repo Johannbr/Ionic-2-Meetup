@@ -1,0 +1,1 @@
+asciidoctor -T ../Reveal/asciidoctor-reveal.js/templates/slim README.adoc
