@@ -1,0 +1,13 @@
+
+/*********************************************
+ * LOGO
+ *********************************************/
+.reveal:after {
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  z-index: 30;
+  height: 65px;
+  width: 200px;
+  background: url(image/logo_fondnoir.png) no-repeat;
+  background-size: 120px; }
